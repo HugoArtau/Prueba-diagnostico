@@ -1,0 +1,26 @@
+# Archivos de compilación de LaTeX (ignorarlos para mantener limpio el repo)
+*.aux
+*.log
+*.lof
+*.lot
+*.toc
+*.bbl
+*.blg
+*.out
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.ps
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.run.xml
+*.bcf
+*.xml
+*.tdo
+
+# Archivos de salida (a menudo grandes o binarios)
+*.pdf
+*.zip
+diagnostico.tex
