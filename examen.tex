@@ -7,7 +7,7 @@
 \usepackage{ragged2e}
 \usepackage{geometry}
 \usepackage{booktabs}
-
+\usepackage{comment} % paquete que te permite hacer comentarios de varias lineas de codigo a la vez.
 
 % --- CONFIGURACIÓN DE PUNTUACIÓN EN ESPAÑOL  ---
 % Definimos cómo se muestran los puntos: "punto" para singular y "puntos" para plural.
@@ -52,7 +52,7 @@
 
 
 	
-	\vspace{0.5cm}
+	\vspace{1cm}
 	
 	% -------------------------------------------------------------
 	% COMIENZA EL EXAMEN (Todas las preguntas)
@@ -63,11 +63,19 @@
 		\question[1] \textbf{Resuelve las siguientes ecuaciones.} 
 		
 		\begin{parts}
-			\part $x^2 + 4 = 0$
-			\part $3x + 4x - 2x = 8$
-			\part $4x - 32 = 5x + 13$
-			\part $2x + 1 = 8$
+			\part $x^2 - 4 = 0$
+			\part $3x+\sqrt{6x+10}=35$ %x=9
+			\part $2^{3x-5}=1024$
+			\part $\dfrac{5x-7}{2}-3x=\dfrac{2x+7}{3}-14$ % x=-7 comprobar
 		\end{parts}
+		\begin{solution}
+		\begin{parts}
+			\part $x_{1}=$\hspace{2in} $x_{2}=$
+			\part $x=$
+			\part $x=$
+			\part $x=$
+	\end{parts}	
+		\end{solution}
 		
 		% PREGUNTA 2: ÁNGULOS (Múltiple Opción)
 		\question[1] \textbf{¿Qué ángulos son iguales al ángulo 6 de la figura?}
@@ -100,9 +108,9 @@
 		\end{parts}
 		
 		% PREGUNTA 5: FRACCIONES ALGEBRAICAS (VERTICAL Y CON PUNTUACIÓN AJUSTADA)
-		\question[1] \textbf{Señale la respuesta correcta:}
+		\question[1] \textbf{Si sumamos las fracciones $\frac{4}{x+2} + \frac{2x}{x+2}$ dará por resultado:}
 		
-		\textbf{5.1 (0.5 pts): Si sumamos las fracciones $\frac{4}{x+2} + \frac{2x}{x+2}$ dará por resultado:}
+		  
 		
 		\begin{choices} % CAMBIADO a choices para opciones verticales
 			\choice $\frac{6x}{x+2}$
@@ -112,8 +120,10 @@
 		\end{choices}
 		
 		\vspace{1cm}
-		
-		\textbf{5.2 (0.5 pts): Si sumamos $\frac{x}{x+3} + \frac{2}{x-2}$ su resultado será:}
+		\begin{comment}
+	
+	
+		\question[1] \textbf{Si sumamos $\frac{x}{x+3} + \frac{2}{x-2}$ su resultado será}:
 	
 		\begin{choices} % CAMBIADO a choices para opciones verticales
 			\choice $\frac{2x}{(x+3)(x-2)}$
@@ -121,6 +131,7 @@
 			\choice $\frac{x^2+6}{(x+3)(x-2)}$
 			\choice $\frac{1}{6}$
 		\end{choices}
+			\end{comment}
 		
 		% PREGUNTA 6: SISTEMA DE ECUACIONES
 		\question[1] \textbf{El conjunto solución del sistema $\begin{cases} 3x+2y=7 \\ 2x+5y=12 \end{cases}$ es:}
@@ -149,28 +160,29 @@
 		% PREGUNTA 8: PROPIEDADES DE POTENCIAS
 		
 		\question[1] \textbf{¿Cuál de las siguientes igualdades es correcta?}
-		\begin{choices}
+		\begin{checkboxes}
 			\choice $7^2 \cdot 7^4 \cdot 7 = 7^6$
 			\choice $7^2 \cdot 7^{-1} \cdot 7^3 = 7^4$
 			\choice $7^2 + 7^4 + 7 = 21^7$
 			\choice $7^2 + 7^{-1} + 7^3 = 7^3$
-		\end{choices}
+		\end{checkboxes}
 		
 		% PREGUNTA 9: FUNCIÓN
 		\question[1] \textbf{Selecciona cuál de las siguientes reglas de correspondencia pertenece a la función representada.}
 		\begin{center}
 			\includegraphics[width=0.5\textwidth]{image_249683.png}
 		\end{center}
-		\begin{choices}
+		\begin{checkboxes}
 			\choice $f(x) = \sqrt{x-5}-1$
+			
 			\choice $f(x) = \sqrt{x-1}-3$
 			\choice $f(x) = \sqrt{x+1}-3$
 			\choice $f(x) = \sqrt{x-1}+3$
-		\end{choices}
+		\end{checkboxes}
 		
 		% PREGUNTA 10: RELACIONAR COLUMNAS (Tabla)
 		\question[1] \textbf{Escribe en la Columna B los resultados correspondientes a cada una de las operaciones de la Columna A.}
-		\v
+		
 		
 		\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}X|X|}
 			\hline
@@ -188,5 +200,31 @@
 			\hline
 		\end{tabularx}
 		
+		\vspace{0,5cm}
+		
+	\question[1] \textbf{En la figura tenemos que AC bisectriz del $\angle$ DAB. Además $\angle$ DEB=110$^\circ$, $\angle$ ADE=70$^\circ$, CBA=60$^\circ$. % ACB=100
+		  Halla la amplitud de $\angle$ ACB}
+\begin{center}
+		\includegraphics[width=0.7\linewidth]{fig1}
+\end{center}
+		  
+\question[1]Dada la ecuación $\log_2{(x^{2}+1)}-\log_4{x^{2}}=1$. La suma de sus soluciones es:
+
+\begin{oneparcheckboxes}
+	
+	\choice 0 %Respuesta correcta
+	\choice 1
+	\choice 2
+	\choice 3
+\end{oneparcheckboxes}
+\question[1]Halle el valor de $x$ en la siguiente ecuación $9\cdot27^{x}=27$
+
+\begin{oneparcheckboxes}
+	
+	\choice $\dfrac{1}{2}$ 
+	\choice $\dfrac{1}{3}$ 
+	\choice 3
+	\choice $\dfrac{1}{9}$ 
+\end{oneparcheckboxes}		  
 	\end{questions}
 \end{document}
